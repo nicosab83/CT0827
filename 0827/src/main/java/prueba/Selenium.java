@@ -19,7 +19,7 @@ public class Selenium {
 		Thread.sleep(2000);
 
 		WebElement searchBar = driver.findElement(By.id("search_query_top"));
-		WebElement searchBtn = driver.findElement(By.xpath("(//*[@type = \"submit\"])[1]")); // En el navegador: // "submit"])[1]
+		WebElement searchBtn = driver.findElement(By.xpath("(//*[@type = \"submit\"])[1]")); // En el navegador: //*([@id="submit"]])[1]
 
 		searchBar.sendKeys("Dress");
 		searchBtn.click();

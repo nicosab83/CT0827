@@ -2,16 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-05T16:17:58Z" name="Default suite" finished-at="2022-09-05T16:18:16Z" duration-ms="18149">
+  <suite started-at="2022-09-29T23:06:54Z" name="Default suite" finished-at="2022-09-29T23:07:27Z" duration-ms="32022">
     <groups>
     </groups>
-    <test started-at="2022-09-05T16:17:58Z" name="Default test" finished-at="2022-09-05T16:18:16Z" duration-ms="18149">
-      <class name="prueba.NewTestSel">
-        <test-method signature="testsel()[pri:0, instance:prueba.NewTestSel@59cba5a]" started-at="2022-09-05T13:17:58Z" name="testsel" finished-at="2022-09-05T13:18:16Z" duration-ms="18132" status="PASS">
+    <test started-at="2022-09-29T23:06:54Z" name="Default test" finished-at="2022-09-29T23:07:27Z" duration-ms="32022">
+      <class name="testCases_Login.TC_Login">
+        <test-method is-config="true" signature="startWebDriver()[pri:0, instance:testCases_Login.TC_Login@604b1e1d]" started-at="2022-09-29T20:06:54Z" name="startWebDriver" finished-at="2022-09-29T20:07:11Z" duration-ms="16538" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testsel -->
-      </class> <!-- prueba.NewTestSel -->
+        </test-method> <!-- startWebDriver -->
+        <test-method signature="login()[pri:0, instance:testCases_Login.TC_Login@604b1e1d]" started-at="2022-09-29T20:07:11Z" name="login" finished-at="2022-09-29T20:07:26Z" duration-ms="15282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases_Login.TC_Login@604b1e1d]" started-at="2022-09-29T20:07:26Z" name="closeDriver" finished-at="2022-09-29T20:07:27Z" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- testCases_Login.TC_Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

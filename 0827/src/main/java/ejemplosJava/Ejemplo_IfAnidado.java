@@ -3,7 +3,7 @@ package ejemplosJava;
 public class Ejemplo_IfAnidado {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		int temperatura = 20;
 
 		if (temperatura > 15) {

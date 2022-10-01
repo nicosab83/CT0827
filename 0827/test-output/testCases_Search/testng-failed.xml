@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [testCases_Search]" guice-stage="DEVELOPMENT">
+  <test parallel="tests" name="TC_02_SearchBlouse(failed)">
+    <classes>
+      <class name="testCases_Search.TC_02_SearchBlouse">
+        <methods>
+          <include name="startWebDriver"/>
+          <include name="TC_02"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- testCases_Search.TC_02_SearchBlouse -->
+      <class name="testCases_Search.TC_01_SearchDress">
+        <methods>
+          <include name="startWebDriver"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- testCases_Search.TC_01_SearchDress -->
+    </classes>
+  </test> <!-- TC_02_SearchBlouse(failed) -->
+  <test parallel="tests" name="TC_01_SearchDress(failed)">
+    <classes>
+      <class name="testCases_Search.TC_02_SearchBlouse">
+        <methods>
+          <include name="startWebDriver"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- testCases_Search.TC_02_SearchBlouse -->
+      <class name="testCases_Search.TC_01_SearchDress">
+        <methods>
+          <include name="TC_01"/>
+          <include name="startWebDriver"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- testCases_Search.TC_01_SearchDress -->
+    </classes>
+  </test> <!-- TC_01_SearchDress(failed) -->
+</suite> <!-- Failed suite [testCases_Search] -->
