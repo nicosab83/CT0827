@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 
 import commonClasses.DriverSetup;
 import commonClasses.GlobalVariables;
+import commonClasses.WrapClass;
 import navigationPages.HomePage;
 import navigationPages.SearchResultsPage;
 
@@ -34,6 +35,7 @@ public class TC_02_SearchBlouse {
 	
 	@AfterTest
 	public void closeDriver() {
+		WrapClass.takeScreenshot(driver, "TC_02");
 		driver.quit();
 	}
 }

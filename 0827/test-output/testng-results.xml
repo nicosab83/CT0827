@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-29T23:06:54Z" name="Default suite" finished-at="2022-09-29T23:07:27Z" duration-ms="32022">
+  <suite started-at="2022-10-01T14:53:26Z" name="Default suite" finished-at="2022-10-01T14:53:47Z" duration-ms="20225">
     <groups>
     </groups>
-    <test started-at="2022-09-29T23:06:54Z" name="Default test" finished-at="2022-09-29T23:07:27Z" duration-ms="32022">
-      <class name="testCases_Login.TC_Login">
-        <test-method is-config="true" signature="startWebDriver()[pri:0, instance:testCases_Login.TC_Login@604b1e1d]" started-at="2022-09-29T20:06:54Z" name="startWebDriver" finished-at="2022-09-29T20:07:11Z" duration-ms="16538" status="PASS">
+    <test started-at="2022-10-01T14:53:26Z" name="Default test" finished-at="2022-10-01T14:53:47Z" duration-ms="20225">
+      <class name="testCases_Search.TC_05_SearchExcel">
+        <test-method is-config="true" signature="startWebDriver()[pri:0, instance:testCases_Search.TC_05_SearchExcel@1ffcf674]" started-at="2022-10-01T11:53:26Z" name="startWebDriver" finished-at="2022-10-01T11:53:40Z" duration-ms="13218" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startWebDriver -->
-        <test-method signature="login()[pri:0, instance:testCases_Login.TC_Login@604b1e1d]" started-at="2022-09-29T20:07:11Z" name="login" finished-at="2022-09-29T20:07:26Z" duration-ms="15282" status="PASS">
+        <test-method signature="TC_05()[pri:0, instance:testCases_Search.TC_05_SearchExcel@1ffcf674]" started-at="2022-10-01T11:53:40Z" name="TC_05" finished-at="2022-10-01T11:53:46Z" duration-ms="6198" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases_Login.TC_Login@604b1e1d]" started-at="2022-09-29T20:07:26Z" name="closeDriver" finished-at="2022-09-29T20:07:27Z" duration-ms="193" status="PASS">
+        </test-method> <!-- TC_05 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases_Search.TC_05_SearchExcel@1ffcf674]" started-at="2022-10-01T11:53:46Z" name="closeDriver" finished-at="2022-10-01T11:53:47Z" duration-ms="774" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-      </class> <!-- testCases_Login.TC_Login -->
+      </class> <!-- testCases_Search.TC_05_SearchExcel -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

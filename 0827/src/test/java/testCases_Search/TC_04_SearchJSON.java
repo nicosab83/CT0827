@@ -12,7 +12,7 @@ import commonClasses.WrapClass;
 import navigationPages.HomePage;
 import navigationPages.SearchResultsPage;
 
-public class TC_01_SearchDress {
+public class TC_04_SearchJSON {
 	
 	// Declarar e inicializar el WebDriver
 	WebDriver driver = DriverSetup.setupdriver();
@@ -27,15 +27,16 @@ public class TC_01_SearchDress {
 	}
 	
 	@Test
-	public void TC_01() {
-		homePage.search("Dress");
+	public void TC_04() {
+		String searchCriteria = WrapClass.getJsonValue("TC_04", "searchCriteria");
+		homePage.search(searchCriteria);
 		boolean visibleText = searchPage.getPrdText("Dress");
 		Assert.assertTrue(visibleText, "El text DRESS no esta desplegado");
 	}
 	
 	@AfterTest
 	public void closeDriver() {
-		WrapClass.takeScreenshot(driver, "TC_01");
+		WrapClass.takeScreenshot(driver, "TC_04");
 		driver.quit();
 	}
 }

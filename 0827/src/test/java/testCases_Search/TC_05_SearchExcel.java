@@ -12,7 +12,7 @@ import commonClasses.WrapClass;
 import navigationPages.HomePage;
 import navigationPages.SearchResultsPage;
 
-public class TC_01_SearchDress {
+public class TC_05_SearchExcel {
 	
 	// Declarar e inicializar el WebDriver
 	WebDriver driver = DriverSetup.setupdriver();
@@ -27,15 +27,16 @@ public class TC_01_SearchDress {
 	}
 	
 	@Test
-	public void TC_01() {
-		homePage.search("Dress");
+	public void TC_05() {
+		String searchCriteria = WrapClass.getCellData("TC_05", 1, 0);
+		homePage.search(searchCriteria);
 		boolean visibleText = searchPage.getPrdText("Dress");
 		Assert.assertTrue(visibleText, "El text DRESS no esta desplegado");
 	}
 	
 	@AfterTest
 	public void closeDriver() {
-		WrapClass.takeScreenshot(driver, "TC_01");
+		WrapClass.takeScreenshot(driver, "TC_05");
 		driver.quit();
 	}
 }
